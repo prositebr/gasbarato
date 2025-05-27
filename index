@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Barato - Entrega Rápida de Gás em Itapecerica da Serra/SP</title>
+    <style>
+        /* Reset e Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background-color: #FF6B00;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .telefone {
+            background-color: #FF8C00;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        /* Navegação */
+        nav {
+            background-color: #E55C00;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Destaque */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://example.com/gas-delivery.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            background-color: #FF6B00;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background-color: #E55C00;
+        }
+        
+        /* Produtos */
+        .produtos {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .produtos h2 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .produto-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .produto-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .produto-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        
+        .produto-card h3 {
+            margin-bottom: 0.5rem;
+            color: #FF6B00;
+        }
+        
+        .preco {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .footer-contato {
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.3rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Gas Barato</div>
+        <div class="telefone">📞 (11) 97565-5456</div>
+        <p>Entrega rápida de gás em Itapecerica da Serra/SP</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="home">
+        <h1>Gás de Qualidade Entregue na Sua Casa</h1>
+        <p>Serviço rápido e seguro em Itapecerica da Serra e região</p>
+        <a href="https://wa.me/5511975655456" class="cta-button">PEÇA AGORA PELO WHATSAPP</a>
+    </section>
+    
+    <section class="produtos" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <img src="https://example.com/gas-13kg.jpg" alt="Botijão de Gás 13kg">
+                <h3>Gás de Cozinha 13kg</h3>
+                <p>Ideal para uso residencial</p>
+                <div class="preco">R$ 95,90</div>
+                <a href="https://wa.me/5511975655456?text=Quero%20comprar%20G%C3%A1s%2013kg" class="cta-button">Comprar</a>
+            </div>
+            
+            <div class="produto-card">
+                <img src="https://example.com/gas-45kg.jpg" alt="Botijão de Gás 45kg">
+                <h3>Gás Industrial 45kg</h3>
+                <p>Para empresas e indústrias</p>
+                <div class="preco">R$ 320,00</div>
+                <a href="https://wa.me/5511975655456?text=Quero%20comprar%20G%C3%A1s%2045kg" class="cta-button">Comprar</a>
+            </div>
+            
+            <div class="produto-card">
+                <img src="https://example.com/gas-empilhadeira.jpg" alt="Botijão para Empilhadeira">
+                <h3>Gás para Empilhadeira 20kg</h3>
+                <p>Especial para equipamentos industriais</p>
+                <div class="preco">R$ 180,00</div>
+                <a href="https://wa.me/5511975655456?text=Quero%20comprar%20G%C3%A1s%20para%20Empilhadeira" class="cta-button">Comprar</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contato">
+        <div class="footer-contato">
+            <h3>Fale Conosco</h3>
+            <p>📞 (11) 97565-5456</p>
+            <p>📍 Rua Antônio de Albuquerque, 06 - Aldeinha, Itapecerica da Serra/SP</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="#">📱</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+        </div>
+        
+        <p>&copy; 2025 Gas Barato - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
